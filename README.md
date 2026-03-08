@@ -36,42 +36,7 @@
 
 系统涵盖用户端、AI 后端、MCP 服务、Python RAG 服务以及完善的可观测性基础设施环节。AI 核心层通过 Router 分发任务至不同智能体（ReAct/三角色）。
 
-```mermaid
-graph TB
-    subgraph 用户端 / 前端
-        NextApp["LifePilot 前端\n(Next.js 15)"]
-    end
 
-    subgraph Node.js AI 后端
-        Express["LifePilotServer\n(Express + LangGraph)"]
-        McpClient["MCP Client"]
-        McpServer["LifePilot_mcp\n(MCP 服务器)"]
-    end
-
-    subgraph Python RAG 服务
-        FastAPI["ai-server\n(FastAPI + Weaviate)"]
-    end
-
-    subgraph 数据底层与可观测平台
-        MySQL[("MySQL (核心业务表)")]
-        Weaviate[("Weaviate (向量库)")]
-        Metaphorical["Metaphorical 看板\n(全链路日志集中监控)"]
-        OmniBase["OmniBase 数据平台\n(多源数据观测看板)"]
-    end
-
-    NextApp <-->|REST / SSE 流式回复| Express
-    Express <-->|流程决策与调用| McpClient
-    McpClient <-->|MCP 协议交互| McpServer
-    McpServer -->|Prisma 读写代理| MySQL
-
-    NextApp -->|yanmengs-rag-package (HTTP)| FastAPI
-    FastAPI --> Weaviate
-
-    NextApp -->|yanmengs-logs (HTTP POST)| Metaphorical
-    Express -->|yanmengs-logs| Metaphorical
-    OmniBase -.->|直连监控大屏| MySQL
-    OmniBase -.->|直连监控大屏| Weaviate
-```
 
 ---
 
