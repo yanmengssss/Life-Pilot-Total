@@ -1,0 +1,108 @@
+{
+  "topic": "人工智能",
+  "dataVersion": "2024-03",
+  "statistics": {
+    "globalAI市场规模": 327000000000,
+    "中国AI市场规模": 300000000000,
+    "全球AI企业数量": 50000,
+    "中国AI企业数量": 12000,
+    "AI人才缺口": 4000000
+  },
+  "keyTechnologies": {
+    "machineLearning": {
+      "description": "机器学习",
+      "adoptionRate": "78%",
+      "growthRate": "25%"
+    },
+    "deepLearning": {
+      "description": "深度学习",
+      "adoptionRate": "65%",
+      "growthRate": "30%"
+    },
+    "naturalLanguageProcessing": {
+      "description": "自然语言处理",
+      "adoptionRate": "52%",
+      "growthRate": "35%"
+    },
+    "computerVision": {
+      "description": "计算机视觉",
+      "adoptionRate": "58%",
+      "growthRate": "28%"
+    }
+  },
+  "applicationAreas": [
+    {
+      "area": "医疗健康",
+      "marketSize": 150000000000,
+      "growthRate": "40%",
+      "keyUseCases": ["医学影像诊断", "药物研发", "个性化治疗", "健康管理"]
+    },
+    {
+      "area": "金融服务",
+      "marketSize": 80000000000,
+      "growthRate": "25%",
+      "keyUseCases": ["风险评估", "欺诈检测", "智能投顾", "客户服务"]
+    },
+    {
+      "area": "智能制造",
+      "marketSize": 60000000000,
+      "growthRate": "30%",
+      "keyUseCases": ["质量检测", "预测性维护", "工艺优化", "智能物流"]
+    },
+    {
+      "area": "自动驾驶",
+      "marketSize": 40000000000,
+      "growthRate": "45%",
+      "keyUseCases": ["环境感知", "路径规划", "决策控制", "车联网"]
+    }
+  ],
+  "majorModels": [
+    {
+      "name": "GPT-4",
+      "company": "OpenAI",
+      "parameters": "1.8万亿",
+      "releaseDate": "2023-03",
+      "capabilities": ["文本生成", "代码编写", "图像理解", "长文本理解"]
+    },
+    {
+      "name": "Claude 2",
+      "company": "Anthropic",
+      "parameters": "1000亿",
+      "releaseDate": "2023-07",
+      "capabilities": ["对话生成", "长文本处理", "代码分析", "安全对齐"]
+    },
+    {
+      "name": "文心一言",
+      "company": "百度",
+      "parameters": "2600亿",
+      "releaseDate": "2023-03",
+      "capabilities": ["中文理解", "文学创作", "商业文案", "数理逻辑"]
+    },
+    {
+      "name": "通义千问",
+      "company": "阿里云",
+      "parameters": "1000亿",
+      "releaseDate": "2023-04",
+      "capabilities": ["多轮对话", "文案创作", "逻辑推理", "代码生成"]
+    },
+    {
+      "name": "讯飞星火",
+      "company": "科大讯飞",
+      "parameters": "1000亿",
+      "releaseDate": "2023-05",
+      "capabilities": ["语音交互", "知识问答", "多模态", "行业应用"]
+    }
+  ],
+  "investmentTrends": {
+    "globalAI投资": 180000000000,
+    "中国AI投资": 60000000000,
+    "topInvestors": ["红杉资本", "高瓴资本", "IDG资本", "经纬中国"],
+    "hotTracks": ["大模型", "AI芯片", "智能驾驶", "AI+医疗"]
+  },
+  "industryStandard": {
+    "中国AI伦理准则": "已发布",
+    "数据安全法": "已实施",
+    "生成式AI管理办法": "已实施",
+    "算法推荐管理规定": "已实施"
+  }
+}

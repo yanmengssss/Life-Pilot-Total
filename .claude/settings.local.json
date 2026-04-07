@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Bash(echo:*)",
+      "Bash(cd:*)",
+      "Bash(python3 -c:*)",
+      "Bash(python -c:*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(xxd:*)",
+      "Bash(pip show:*)",
+      "Bash(pip:*)",
+      "Bash(curl -s http://localhost:6333/collections)",
+      "Bash(docker ps:*)",
+      "Bash(docker-compose:*)",
+      "Bash(docker build:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}

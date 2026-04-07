@@ -1,0 +1,112 @@
+[
+  {
+    "id": "evt001",
+    "year": -221,
+    "title": "秦始皇统一六国",
+    "dynasty": "秦朝",
+    "location": "中国",
+    "description": "秦始皇灭韩、赵、魏、楚、燕、齐六国，建立中国历史上第一个大一统王朝",
+    "significance": "开创了中央集权的封建帝制，统一文字、货币、度量衡",
+    "keyFigures": ["秦始皇", "李斯", "王翦"],
+    "consequences": ["建立秦朝", "统一度量衡", "修筑长城", "焚书坑儒"]
+  },
+  {
+    "id": "evt002",
+    "year": -206,
+    "title": "楚汉相争",
+    "dynasty": "秦末汉初",
+    "location": "中国",
+    "description": "项羽与刘邦争夺天下统治权的战争，最终刘邦建立汉朝",
+    "significance": "结束了秦末乱世，开启了400年的大汉王朝",
+    "keyFigures": ["项羽", "刘邦", "韩信", "张良"],
+    "consequences": ["汉朝建立", "分封制废除", "汉文化奠定基础"]
+  },
+  {
+    "id": "evt003",
+    "year": 618,
+    "title": "唐朝建立",
+    "dynasty": "唐朝",
+    "location": "长安（今西安）",
+    "description": "李渊在太原起兵，攻占长安，建立唐朝",
+    "significance": "开启了中国历史上最繁荣的朝代之一",
+    "keyFigures": ["李渊", "李世民", "李建成"],
+    "consequences": ["唐朝建立", "贞观之治", "开元盛世"]
+  },
+  {
+    "id": "evt004",
+    "year": 1271,
+    "title": "元朝建立",
+    "dynasty": "元朝",
+    "location": "大都（今北京）",
+    "description": "忽必烈建立元朝，统一中国",
+    "significance": "中国历史上第一个由少数民族建立的大一统王朝",
+    "keyFigures": ["忽必烈", "成吉思汗"],
+    "consequences": ["元朝建立", "行省制度", "海上丝绸之路繁荣"]
+  },
+  {
+    "id": "evt005",
+    "year": 1368,
+    "title": "明朝建立",
+    "dynasty": "明朝",
+    "location": "南京（后迁都北京）",
+    "description": "朱元璋推翻元朝，建立明朝",
+    "significance": "汉人重新建立大一统王朝",
+    "keyFigures": ["朱元璋", "刘伯温", "徐达"],
+    "consequences": ["明朝建立", "锦衣卫设立", "郑和下西洋", "资本主义萌芽"]
+  },
+  {
+    "id": "evt006",
+    "year": 1644,
+    "title": "清朝入关",
+    "dynasty": "清朝",
+    "location": "北京",
+    "description": "多尔衮率清军入关，定都北京",
+    "significance": "清朝开始对全国的统治，中国最后一个封建王朝",
+    "keyFigures": ["多尔衮", "顺治帝", "吴三桂"],
+    "consequences": ["清朝统一全国", "康乾盛世", "文字狱", "闭关锁国"]
+  },
+  {
+    "id": "evt007",
+    "year": 1776,
+    "title": "美国独立宣言",
+    "dynasty": "近代",
+    "location": "费城",
+    "description": "美国13州发表独立宣言，宣布脱离英国独立",
+    "significance": "标志着美国的诞生，对世界民主化进程产生深远影响",
+    "keyFigures": ["乔治·华盛顿", "托马斯·杰斐逊", "本杰明·富兰克林"],
+    "consequences": ["美国独立", "制宪会议", "三权分立", "资产阶级革命浪潮"]
+  },
+  {
+    "id": "evt008",
+    "year": 1789,
+    "title": "法国大革命",
+    "dynasty": "近代",
+    "location": "巴黎",
+    "description": "法国爆发大革命，推翻波旁王朝",
+    "significance": "彻底改变了法国和欧洲的政治格局",
+    "keyFigures": ["路易十六", "罗伯斯庇尔", "拿破仑·波拿巴"],
+    "consequences": ["法兰西第一共和国", "拿破仑帝国", "自由平等博爱", "欧洲君主制动摇"]
+  },
+  {
+    "id": "evt009",
+    "year": 1945,
+    "title": "抗日战争胜利",
+    "dynasty": "现代",
+    "location": "中国",
+    "description": "中国人民取得抗日战争的全面胜利",
+    "significance": "中华民族由衰败走向振兴的历史转折点",
+    "keyFigures": ["毛泽东", "蒋介石", "张学良"],
+    "consequences": ["日本投降", "台湾回归", "新中国即将诞生", "国际地位提升"]
+  },
+  {
+    "id": "evt010",
+    "year": 1949,
+    "title": "中华人民共和国成立",
+    "dynasty": "现代",
+    "location": "北京",
+    "description": "毛泽东在天安门城楼宣布中华人民共和国成立",
+    "significance": "标志着中国新民主主义革命的胜利，中国人民从此站起来了",
+    "keyFigures": ["毛泽东", "周恩来", "朱德", "刘少奇"],
+    "consequences": ["新中国成立", "社会主义制度建立", "抗美援朝", "土地改革"]
+  }
+]

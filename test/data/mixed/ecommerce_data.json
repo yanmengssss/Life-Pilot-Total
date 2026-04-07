@@ -1,0 +1,101 @@
+{
+  "topic": "电子商务",
+  "dataVersion": "2024-03",
+  "marketOverview": {
+    "中国电商市场规模": 50000000000000,
+    "中国网购用户": 900000000,
+    "移动端占比": "75%",
+    "渗透率": "80%"
+  },
+  "platformMarketShare": {
+    "天猫": 50,
+    "京东": 25,
+    "拼多多": 15,
+    "其他": 10
+  },
+  "userBehavior": {
+    "averageOrderAmount": 150,
+    "annualOrdersPerUser": 30,
+    "averageSessionDuration": "15分钟",
+    "conversionRate": "5%",
+    "mobilePaymentRate": "85%"
+  },
+  "logisticsMetrics": {
+    "当日达覆盖率": "50%",
+    "次日达覆盖率": "80%",
+    "平均配送时间": "2.5天",
+    "无人仓数量": 1000,
+    "智能快递柜数量": 800000
+  },
+  "peakPerformance": {
+    "双十一2023": {
+      "gmv": 1138600000000,
+      "包裹量": 52000000,
+      "peakQPS": 1000000,
+      "systemAvailability": "99.99%",
+      "orderProcessingTime": "50ms"
+    }
+  },
+  "categories": [
+    {
+      "category": "服装鞋包",
+      "marketSize": 15000000000000,
+      "growthRate": "8%"
+    },
+    {
+      "category": "食品生鲜",
+      "marketSize": 8000000000000,
+      "growthRate": "25%"
+    },
+    {
+      "category": "数码家电",
+      "marketSize": 6000000000000,
+      "growthRate": "5%"
+    },
+    {
+      "category": "美妆护肤",
+      "marketSize": 4000000000000,
+      "growthRate": "15%"
+    },
+    {
+      "category": "家居百货",
+      "marketSize": 3000000000000,
+      "growthRate": "12%"
+    }
+  ],
+  "technologyAdoption": {
+    "AI推荐系统": "80%",
+    "大数据分析": "90%",
+    "云计算": "95%",
+    "智能客服": "70%",
+    "无人仓储": "40%",
+    "无人配送": "20%"
+  },
+  "paymentMethods": {
+    "支付宝": 45,
+    "微信支付": 35,
+    "银行卡": 15,
+    "其他": 5
+  },
+  "crossBorderEcommerce": {
+    "进口规模": 2500000000000,
+    "出口规模": 15000000000000,
+    "mainDestinations": ["美国", "欧盟", "东南亚", "日本", "韩国"],
+    "hotProducts": ["服装", "电子产品", "家居用品", "美妆产品"]
+  },
+  "emergingTrends": {
+    "直播电商": {
+      "marketSize": 4000000000000,
+      "growthRate": "50%",
+      "topPlatforms": ["抖音电商", "快手电商", "淘宝直播"]
+    },
+    "社区团购": {
+      "marketSize": 2000000000000,
+      "growthRate": "30%"
+    },
+    "即时零售": {
+      "marketSize": 1000000000000,
+      "growthRate": "60%"
+    }
+  }
+}

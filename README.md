@@ -24,7 +24,7 @@
 | **前端主应用** | `/LifePilot` | 任务看板、日历、知识库、AI对话 UI | Next.js 15, React 19, MobX, TailwindCSS |
 | **AI 后端服务** | `/LifePilotServer` | AI 对话流式响应、LangGraph 核心工作流 | Express 5, LangGraph, LLM (GPT-4o) |
 | **MCP 工具服务** | `/LifePilot_mcp` | 安全的数据访问代理，为 AI 提供数据库读写工具 | Express, @modelcontextprotocol/sdk |
-| **知识库 / RAG** | `/ai-server` | 文档解析、向量检索、ASR/TTS 集成 | FastAPI, LangChain, Weaviate |
+| **知识库 / RAG** | `/ai-server` | 多路召回RAG、向量检索、图谱抽取、ASR/TTS | FastAPI, Qdrant, Neo4j, SiliconFlow |
 | **日志监控看板** | `/Metaphorical` | 查看/管理所有项目上报的运行日志 | Next.js 16, Mongoose, shadcn/ui |
 | **架构与数据库监控** | `/OmniBase` | 多数据源 (MySQL/Redis/Weaviate) 可视化平台 | Next.js 16, weaviate-client, mysql2 |
 | **共享 SDK** | `/yanmengs-ragPackage` | RAG/TTS/ASR/OSS 统一前端调用与配置聚合 | TypeScript (npm 发布包) |
