@@ -1,0 +1,134 @@
+﻿[ok] 图4-1 系统功能模块划分
+F:\Graduation Project\.rendered_figures\图4-1 系统功能模块划分.png
+
+[ok] 图4-10 语音交互子系统架构
+F:\Graduation Project\.rendered_figures\图4-10 语音交互子系统架构.png
+
+[ok] 图4-11 出行辅助子系统设计
+F:\Graduation Project\.rendered_figures\图4-11 出行辅助子系统设计.png
+
+[ok] 图4-12 知识入库链路设计
+F:\Graduation Project\.rendered_figures\图4-12 知识入库链路设计.png
+
+[ok] 图4-13 混合检索协同关系图
+F:\Graduation Project\.rendered_figures\图4-13 混合检索协同关系图.png
+
+[ok] 图4-14 服务通信关系图
+F:\Graduation Project\.rendered_figures\图4-14 服务通信关系图.png
+
+[ok] 图4-15 前端主应用内部结构图
+F:\Graduation Project\.rendered_figures\图4-15 前端主应用内部结构图.png
+
+[ok] 图4-16 对话编排服务设计图
+F:\Graduation Project\.rendered_figures\图4-16 对话编排服务设计图.png
+
+[ok] 图4-17 任务工具服务设计图
+F:\Graduation Project\.rendered_figures\图4-17 任务工具服务设计图.png
+
+[ok] 图4-18 提醒调度子系统结构图
+F:\Graduation Project\.rendered_figures\图4-18 提醒调度子系统结构图.png
+
+[ok] 图4-19 多存储协作关系图
+F:\Graduation Project\.rendered_figures\图4-19 多存储协作关系图.png
+
+[ok] 图4-2 系统整体架构
+F:\Graduation Project\.rendered_figures\图4-2 系统整体架构.png
+
+[ok] 图4-20 系统安全边界图
+F:\Graduation Project\.rendered_figures\图4-20 系统安全边界图.png
+
+[ok] 图4-3 Agent 协同设计
+F:\Graduation Project\.rendered_figures\图4-3 Agent 协同设计.png
+
+[ok] 图4-4 核心数据模型
+F:\Graduation Project\.rendered_figures\图4-4 核心数据模型.png
+
+[ok] 图4-5 系统整体框架图
+F:\Graduation Project\.rendered_figures\图4-5 系统整体框架图.png
+
+[ok] 图4-6 任务规划子系统设计
+F:\Graduation Project\.rendered_figures\图4-6 任务规划子系统设计.png
+
+[ok] 图4-7 RAG 子系统总体结构
+F:\Graduation Project\.rendered_figures\图4-7 RAG 子系统总体结构.png
+
+[ok] 图4-8 LangGraph 工作流状态流转
+F:\Graduation Project\.rendered_figures\图4-8 LangGraph 工作流状态流转.png
+
+[ok] 图4-9 MCP 工具服务交互架构
+F:\Graduation Project\.rendered_figures\图4-9 MCP 工具服务交互架构.png
+
+[ok] 图5-1 前端主应用实现结构
+F:\Graduation Project\.rendered_figures\图5-1 前端主应用实现结构.png
+
+[ok] 图5-10 RAG 召回与重排流程图
+F:\Graduation Project\.rendered_figures\图5-10 RAG 召回与重排流程图.png
+
+[ok] 图5-11 意图路由分发图
+F:\Graduation Project\.rendered_figures\图5-11 意图路由分发图.png
+
+[ok] 图5-12 Canvas 渲染管线图
+F:\Graduation Project\.rendered_figures\图5-12 Canvas 渲染管线图.png
+
+[ok] 图5-13 录制与编码方案图
+F:\Graduation Project\.rendered_figures\图5-13 录制与编码方案图.png
+
+[ok] 图5-14 提醒调度抢占流程图
+F:\Graduation Project\.rendered_figures\图5-14 提醒调度抢占流程图.png
+
+[ok] 图5-15 SSE 流式输出时序图
+F:\Graduation Project\.rendered_figures\图5-15 SSE 流式输出时序图.png
+
+[ok] 图5-16 SSE 客户端状态图
+F:\Graduation Project\.rendered_figures\图5-16 SSE 客户端状态图.png
+
+[ok] 图5-17 对话消息流转图
+F:\Graduation Project\.rendered_figures\图5-17 对话消息流转图.png
+
+[ok] 图5-18 任务生成确认时序图
+F:\Graduation Project\.rendered_figures\图5-18 任务生成确认时序图.png
+
+[ok] 图5-19 知识入库实现管线
+F:\Graduation Project\.rendered_figures\图5-19 知识入库实现管线.png
+
+[ok] 图5-2 前端状态组织图
+F:\Graduation Project\.rendered_figures\图5-2 前端状态组织图.png
+
+[ok] 图5-20 知识问答时序图
+F:\Graduation Project\.rendered_figures\图5-20 知识问答时序图.png
+
+[ok] 图5-21 路由回退机制图
+F:\Graduation Project\.rendered_figures\图5-21 路由回退机制图.png
+
+[ok] 图5-22 媒体记录交互图
+F:\Graduation Project\.rendered_figures\图5-22 媒体记录交互图.png
+
+[ok] 图5-23 提醒调度时序图
+F:\Graduation Project\.rendered_figures\图5-23 提醒调度时序图.png
+
+[ok] 图5-24 流式会话处理图
+F:\Graduation Project\.rendered_figures\图5-24 流式会话处理图.png
+
+[ok] 图5-3 语音交互时序图
+F:\Graduation Project\.rendered_figures\图5-3 语音交互时序图.png
+
+[ok] 图5-4 音频采集与上传管线
+F:\Graduation Project\.rendered_figures\图5-4 音频采集与上传管线.png
+
+[ok] 图5-5 响应式布局切换图
+F:\Graduation Project\.rendered_figures\图5-5 响应式布局切换图.png
+
+[ok] 图5-6 本地缓存与同步流程
+F:\Graduation Project\.rendered_figures\图5-6 本地缓存与同步流程.png
+
+[ok] 图5-7 任务规划工作流实现图
+F:\Graduation Project\.rendered_figures\图5-7 任务规划工作流实现图.png
+
+[ok] 图5-8 检查点与确认恢复时序图
+F:\Graduation Project\.rendered_figures\图5-8 检查点与确认恢复时序图.png
+
+[ok] 图5-9 MCP 调用时序图
+F:\Graduation Project\.rendered_figures\图5-9 MCP 调用时序图.png
+
+OK=44
+FAIL=0

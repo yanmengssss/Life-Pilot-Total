@@ -1,0 +1,52 @@
+﻿graph TB
+    Start["用户输入"] --> Router["路由代理<br/>意图识别"]
+
+    Router -->|"任务规划"| ThreeRole["三角色协作"]
+    Router -->|"知识问答"| RAG["RAG 知识问答"]
+    Router -->|"出行辅助"| ReAct["ReAct 推理"]
+
+    subgraph 三角色协作
+        Executor["执行角色<br/>生成方案"]
+        Inspector["校验角色<br/>质量检查"]
+        Manager["呈现角色<br/>等待确认"]
+
+        Executor --> Inspector
+        Inspector -->|"通过"| Manager
+        Inspector -->|"退回修改"| Executor
+        Manager -->|"用户确认"| WriteDB["写入业务数据"]
+        Manager -->|"用户拒绝"| Executor
+    end
+
+    subgraph RAG 知识问答
+        Dense["向量检索"]
+        Sparse["关键词检索"]
+        Graph["图谱检索"]
+        Rerank["结果排序"]
+        LLM["答案生成"]
+
+        Dense --> Rerank
+        Sparse --> Rerank
+        Graph --> Rerank
+        Rerank --> LLM
+    end
+
+    subgraph ReAct 推理
+        Reason["推理决策"]
+        Act["工具调用"]
+        Loop{"继续调用?"}
+
+        Reason --> Act
+        Act --> Loop
+        Loop -->|"是"| Reason
+        Loop -->|"否"| Final["整合输出"]
+    end
+
+    WriteDB --> End
+    LLM --> End
+    Final --> End
+
+    End["返回结果"]
+
+    style ThreeRole fill:#fff3e0,stroke:#ff9800
+    style RAG fill:#e8f5e9,stroke:#4caf50
+    style ReAct fill:#e3f2fd,stroke:#2196f3

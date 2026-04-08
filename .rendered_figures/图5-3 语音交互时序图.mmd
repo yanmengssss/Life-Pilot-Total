@@ -1,0 +1,15 @@
+﻿sequenceDiagram
+    participant U as 用户
+    participant FE as 前端
+    participant ASR as 语音识别服务
+    participant WF as 对话编排服务
+    participant TTS as 语音合成服务
+
+    U->>FE: 开始录音
+    FE->>FE: 分片采集音频
+    FE->>ASR: 上传音频并请求转写
+    ASR-->>FE: 返回文本
+    FE->>WF: 提交文本消息
+    WF-->>FE: 返回流式文本结果
+    FE->>TTS: 请求语音播报
+    TTS-->>FE: 返回音频流

@@ -1,0 +1,5 @@
+version: 1
+interface:
+  display_name: DGUT Thesis Compliance
+  short_description: 东莞理工计算机学院毕业论文规范与提交流程检查
+  default_prompt: 按东莞理工学院计算机学院毕业论文规范检查当前内容并给出逐项修改建议。

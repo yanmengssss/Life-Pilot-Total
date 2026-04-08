@@ -1,0 +1,13 @@
+﻿sequenceDiagram
+    participant WF as 工作流服务
+    participant MC as MCP客户端
+    participant MS as MCP工具服务
+    participant DB as 业务数据库
+
+    WF->>MC: 请求创建任务
+    MC->>MS: 发起工具调用
+    MS->>MS: 参数校验
+    MS->>DB: 执行受控写入
+    DB-->>MS: 返回执行结果
+    MS-->>MC: 工具结果
+    MC-->>WF: 写入成功/失败

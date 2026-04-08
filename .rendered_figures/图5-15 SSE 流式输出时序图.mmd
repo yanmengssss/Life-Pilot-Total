@@ -1,0 +1,10 @@
+﻿sequenceDiagram
+    participant FE as 前端
+    participant WF as 对话编排服务
+
+    FE->>WF: 发起对话请求
+    WF-->>FE: think 事件
+    WF-->>FE: content 事件
+    WF-->>FE: content 事件
+    WF-->>FE: confirm/refresh 事件
+    WF-->>FE: done 事件

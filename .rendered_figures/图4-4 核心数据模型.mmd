@@ -1,0 +1,64 @@
+﻿erDiagram
+    User ||--o{ Task : "1:N"
+    User ||--o{ ChatHistory : "1:N"
+    User ||--o{ Document : "1:N"
+    User ||--o{ Record : "1:N"
+    Task ||--o{ TaskTag : "1:N"
+    Tag ||--o{ TaskTag : "1:N"
+    Document ||--o{ QdrantVectors : "1:N"
+    Document ||--o{ GraphEntities : "1:N"
+
+    User {
+        string id PK
+        string email
+        string password
+        datetime createdAt
+        datetime updatedAt
+    }
+
+    Task {
+        string id PK
+        string userId FK
+        string title
+        string content
+        datetime startAt
+        datetime endAt
+        enum status
+        int priority
+        string tipsFrequency
+    }
+
+    Tag {
+        string id PK
+        string name
+        string color
+    }
+
+    TaskTag {
+        string taskId FK
+        string tagId FK
+    }
+
+    ChatHistory {
+        string id PK
+        string userId FK
+        json messages
+        datetime createdAt
+    }
+
+    Document {
+        string id PK
+        string userId FK
+        string filename
+        string fileUrl
+        array chunks
+        array vectorIds
+    }
+
+    Record {
+        string id PK
+        string userId FK
+        string ossUrl
+        int duration
+        datetime createdAt
+    }

@@ -1,0 +1,21 @@
+﻿flowchart LR
+    FE[前端主应用]
+    WF[对话编排服务]
+    MCP[任务工具服务]
+    AI[AI能力服务]
+    DB1[(MySQL)]
+    DB2[(Redis)]
+    DB3[(MongoDB)]
+    DB4[(Qdrant)]
+    DB5[(Neo4j)]
+
+    FE -- REST --> WF
+    FE -- SSE --> WF
+    FE -- HTTP --> AI
+    WF -- HTTP/JSON --> AI
+    WF -- Tool Call --> MCP
+    MCP -- ORM --> DB1
+    WF -- Cache/Queue --> DB2
+    WF -- History --> DB3
+    AI -- Vector Query --> DB4
+    AI -- Graph Query --> DB5

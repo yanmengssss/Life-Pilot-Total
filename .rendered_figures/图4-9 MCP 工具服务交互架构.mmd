@@ -1,0 +1,14 @@
+﻿sequenceDiagram
+    participant U as 用户
+    participant FE as 前端
+    participant WF as 工作流服务
+    participant MCP as MCP工具服务
+    participant DB as MySQL/Redis
+
+    U->>FE: 提交任务确认
+    FE->>WF: 发送确认结果
+    WF->>MCP: 调用任务创建工具
+    MCP->>DB: 执行业务写入
+    DB-->>MCP: 返回写入结果
+    MCP-->>WF: 返回工具执行结果
+    WF-->>FE: 刷新任务视图

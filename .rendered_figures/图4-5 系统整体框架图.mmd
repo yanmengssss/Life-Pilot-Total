@@ -1,0 +1,78 @@
+﻿graph LR
+    subgraph 客户端层
+        WebApp["Web 应用"]
+        H5App["移动端页面"]
+        VoiceApp["语音终端"]
+        VideoApp["视频终端"]
+    end
+
+    subgraph 网关与协议层
+        Nginx["统一接入"]
+        REST["业务请求"]
+        SSE["流式响应"]
+        WS["实时通信"]
+        HTTPS["安全传输"]
+    end
+
+    subgraph 服务层
+        FrontendService["前端服务"]
+        LLMServer["对话编排服务"]
+        MCPServer["任务工具服务"]
+        AIService["AI 能力服务"]
+    end
+
+    subgraph AI 能力层
+        GPT4o["通用生成模型"]
+        DeepSeek["意图识别模型"]
+        MiniMax["问答生成模型"]
+        Embedding["向量化模型"]
+        ASR["语音识别"]
+        TTS["语音合成"]
+    end
+
+    subgraph 数据层
+        MySQL["业务数据库"]
+        Redis["缓存队列"]
+        MongoDB["对话日志"]
+        VectorDB["向量数据库"]
+        GraphDB["图数据库"]
+        OSS["对象存储"]
+    end
+
+    WebApp --> HTTPS
+    H5App --> HTTPS
+    VoiceApp --> HTTPS
+    VideoApp --> HTTPS
+
+    HTTPS --> Nginx
+    Nginx --> REST
+    Nginx --> SSE
+    Nginx --> WS
+
+    REST --> FrontendService
+    SSE --> LLMServer
+    WS --> FrontendService
+
+    FrontendService --> MySQL
+    FrontendService --> MongoDB
+    FrontendService --> OSS
+
+    LLMServer --> GPT4o
+    LLMServer --> DeepSeek
+    LLMServer --> MCPServer
+    LLMServer --> AIService
+
+    MCPServer --> MySQL
+
+    AIService --> MiniMax
+    AIService --> Embedding
+    AIService --> ASR
+    AIService --> TTS
+    AIService --> VectorDB
+    AIService --> GraphDB
+
+    style 客户端层 fill:#e3f2fd
+    style 网关与协议层 fill:#f3e5f5
+    style 服务层 fill:#fff3e0
+    style AI能力层 fill:#e8f5e9
+    style 数据层 fill:#ffebee

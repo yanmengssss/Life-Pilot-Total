@@ -1,0 +1,14 @@
+﻿sequenceDiagram
+    participant FE as 前端
+    participant DB as 业务数据库
+    participant RD as Redis调度集合
+    participant SC as 后台调度器
+    participant Mail as 邮件服务
+
+    FE->>DB: 保存任务与提醒时间
+    FE->>RD: 写入调度时间
+    SC->>RD: 轮询到期任务
+    RD-->>SC: 返回任务标识
+    SC->>DB: 查询任务详情
+    SC->>Mail: 发送提醒邮件
+    SC->>RD: 写回下一次触发时间

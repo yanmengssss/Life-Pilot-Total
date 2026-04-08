@@ -1,0 +1,16 @@
+﻿sequenceDiagram
+    participant U as 用户
+    participant FE as 前端
+    participant OSS as 对象存储
+    participant AI as AI能力服务
+    participant IDX as Qdrant/Neo4j
+    participant META as MySQL
+
+    U->>FE: 上传文档
+    FE->>OSS: 写入原始文件
+    FE->>META: 记录文档元数据
+    FE->>AI: 提交入库请求
+    AI->>AI: 解析与切分
+    AI->>IDX: 构建向量与图谱索引
+    AI->>META: 回写处理状态
+    META-->>FE: 更新入库结果
