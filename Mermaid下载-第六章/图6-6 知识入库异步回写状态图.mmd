@@ -1,0 +1,20 @@
+﻿sequenceDiagram
+    participant U as 用户
+    participant FE as 前端页面
+    participant API as 前端API
+    participant OSS as 对象存储
+    participant AI as ai-server
+    participant VS as Qdrant/Neo4j
+    participant DB as MySQL(folder)
+
+    U->>FE: 上传文件
+    FE->>OSS: 上传原文件
+    FE->>API: POST /api/knowledge
+    API->>DB: 写入 alreadyRag=ragIng
+    FE->>AI: POST /documents/process-url(fileID)
+    AI->>OSS: 下载文件
+    AI->>AI: 解析/切分/Embedding
+    AI->>VS: 索引写入
+    AI->>API: POST /api/file(success/fail)
+    API->>DB: 更新 alreadyRag 与 ragError
+    FE->>API: GET /api/knowledge 刷新状态

@@ -1,0 +1,19 @@
+﻿flowchart TB
+    USER["用户浏览器"] --> NGINX["Nginx反向代理"]
+
+    NGINX --> FE["lifepilot-frontend:3000"]
+    NGINX --> BE["lifepilot-server:5000"]
+    NGINX --> MCP["lifepilot-mcp:7000"]
+    NGINX --> AI["rag-server:7100"]
+
+    FE --> BE
+    FE --> AI
+    BE --> MCP
+
+    BE --> MYSQL["MySQL"]
+    BE --> REDIS["Redis"]
+    BE --> MONGO["MongoDB"]
+
+    AI --> QDRANT["Qdrant"]
+    AI --> NEO4J["Neo4j"]
+    AI --> WEAVIATE["Weaviate（兼容层）"]

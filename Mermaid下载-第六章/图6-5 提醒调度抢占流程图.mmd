@@ -1,0 +1,22 @@
+﻿flowchart TD
+    LOOP["轮询开始"] --> PULL["zrangebyscore 拉取到期任务"]
+    PULL --> CHECK{"是否有到期任务"}
+    CHECK -- "否" --> SLEEP["sleep 3s"]
+    SLEEP --> LOOP
+
+    CHECK -- "是" --> REM["zrem 抢占任务"]
+    REM --> OWN{"抢占是否成功"}
+    OWN -- "否" --> LOOP
+    OWN -- "是" --> QDB["查询任务与用户信息"]
+    QDB --> DONE{"任务是否完成"}
+    DONE -- "是" --> LOOP
+    DONE -- "否" --> TIMEOUT{"是否超时"}
+
+    TIMEOUT -- "是" --> UPD["更新状态为 timeout"]
+    UPD --> MAIL1["发送超时邮件"]
+    MAIL1 --> LOOP
+
+    TIMEOUT -- "否" --> MAIL2["发送提醒邮件"]
+    MAIL2 --> NEXT["计算下一次触发时间"]
+    NEXT --> READD["zadd 重新入队"]
+    READD --> LOOP

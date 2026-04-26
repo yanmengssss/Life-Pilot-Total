@@ -1,0 +1,10 @@
+﻿flowchart TD
+    CAM["摄像头+麦克风流"] --> CANVAS["Canvas 合成层"]
+    STICKER["贴图库（拖拽/缩放）"] --> CANVAS
+    CANVAS --> CAP["canvas.captureStream(60fps)"]
+    CAP --> REC["MediaRecorder(webm/vp9,opus)"]
+    REC --> STOP["停止录制触发 onstop"]
+    STOP --> BLOB["生成视频Blob"]
+    BLOB --> QN["七牛上传"]
+    QN --> SAVE["保存视频元数据"]
+    SAVE --> LIST["刷新最近视频列表"]

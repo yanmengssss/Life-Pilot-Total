@@ -1,0 +1,16 @@
+﻿flowchart LR
+    DEV["开发者提交代码"] --> GIT["Git仓库"]
+    GIT --> TRIGGER["Jenkins触发流水线"]
+
+    TRIGGER --> FEJOB["前端流水线\nCheckout -> Build -> Docker Build"]
+    TRIGGER --> BEJOB["后端流水线\nCheckout -> Build -> Docker Build"]
+    TRIGGER --> AIJOB["AI流水线\nCheckout -> Build -> Compose Build"]
+
+    FEJOB --> FEDP["部署前端容器"]
+    BEJOB --> BEDP["部署后端容器"]
+    AIJOB --> AIDP["部署RAG及依赖容器"]
+
+    FEDP --> HEALTH["健康检查"]
+    BEDP --> HEALTH
+    AIDP --> HEALTH
+    HEALTH --> CLEAN["清理悬空镜像"]

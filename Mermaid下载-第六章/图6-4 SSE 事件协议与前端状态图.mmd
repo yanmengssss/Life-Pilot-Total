@@ -1,0 +1,14 @@
+﻿stateDiagram-v2
+    [*] --> Connecting
+    Connecting --> Streaming: id
+    Streaming --> Thinking: think
+    Thinking --> Streaming: response
+    Streaming --> Confirming: confirm
+    Confirming --> Resuming: accept/reject
+    Resuming --> Streaming: think/response
+    Streaming --> Refreshing: refresh
+    Refreshing --> Streaming
+    Streaming --> Done: done
+    Streaming --> Error: error
+    Done --> [*]
+    Error --> [*]

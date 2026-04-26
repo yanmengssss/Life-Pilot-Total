@@ -1,7 +1,0 @@
-interface:
-  display_name: "Academic Humanize Writing"
-  short_description: "Polish academic prose to sound less mechanical"
-  default_prompt: "Use $academic-humanize-writing to polish my Chinese academic text so it reads more like a real researcher while preserving claims, data, citations, and conclusions."
-
-policy:
-  allow_implicit_invocation: true

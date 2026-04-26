@@ -1,0 +1,12 @@
+﻿flowchart TD
+    START["用户输入任务需求"] --> CTX["加载时间与上下文"]
+    CTX --> EXE["executor 生成任务JSON"]
+    EXE --> INS["inspector 校验"]
+    INS -- "不通过" --> EXE
+    INS -- "通过" --> FMT["formatter 格式化输出"]
+    FMT --> HITL["interrupt 等待用户确认"]
+
+    HITL -- "reject" --> EXE
+    HITL -- "accept" --> SAVE["save_to_mcp 批量创建任务"]
+    SAVE --> REFRESH["发送 refresh 事件"]
+    REFRESH --> END["流程结束"]
