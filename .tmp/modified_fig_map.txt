@@ -1,0 +1,43 @@
+﻿fig=3-1 rid=rId9 target=media/image1.png cap=图 3-1 用户功能用例关系图
+fig=3-2 rid=rId10 target=media/image2.png cap=图 3-2 日程制定与调整功能实现流程
+fig=3-3 rid=rId11 target=media/image3.png cap=图 3-3 知识库及任务信息查询功能实现流程
+fig=3-4 rid=rId12 target=media/image4.png cap=图 3-4 WebRTC 个人状态记录功能实现流程
+fig=3-5 rid=rId13 target=media/image5.png cap=图 3-5 文本与语音双通道输入功能实现流程
+fig=3-6 rid=rId14 target=media/image6.png cap=图 3-6 任务调度功能实现流程
+fig=4-1 rid=rId15 target=media/image7.png cap=图 4-1 设计目标与能力映射
+fig=4-2 rid=rId16 target=media/image8.png cap=图 4-2 章节衔接关系
+fig=4-3 rid=rId17 target=media/image9.png cap=图 4-3 系统总体架构图
+fig=4-4 rid=rId18 target=media/image10.png cap=图 4-4 业务协同时序图
+fig=4-5 rid=rId19 target=media/image11.png cap=图 4-5 前端功能结构图
+fig=4-6 rid=rId20 target=media/image12.png cap=图 4-6 业务服务工作流结构图
+fig=4-7 rid=rId21 target=media/image13.png cap=图 4-7 分层职责视图
+fig=4-8 rid=rId22 target=media/image14.png cap=图 4-8 任务状态模型图
+fig=4-9 rid=rId23 target=media/image15.png cap=图 4-9 对话事件协议图
+fig=4-10 rid=rId24 target=media/image16.png cap=图 4-10 知识索引结构图
+fig=4-11 rid=rId25 target=media/image17.png cap=图 4-11 调度协作视图
+fig=4-12 rid=rId26 target=media/image18.png cap=图 4-12 数据存储映射图
+fig=4-13 rid=rId27 target=media/image19.png cap=图 4-13 接口分层关系图
+fig=5-1 rid=rId28 target=media/image20.png cap=图 5-1 登录认证总流程图
+fig=5-2 rid=rId29 target=media/image21.png cap=图 5-2 会话令牌生命周期图
+fig=5-3 rid=rId30 target=media/image22.png cap=图 5-3 任务状态迁移图
+fig=5-4 rid=rId31 target=media/image23.png cap=图 5-4 任务写入与更新流程图
+fig=5-5 rid=rId32 target=media/image24.png cap=图 5-5 任务调度时序图
+fig=5-6 rid=rId33 target=media/image25.png cap=图 5-6 个人记录与贴图联动流程图
+fig=5-7 rid=rId34 target=media/image26.png cap=图 5-7 记录对象关系图
+fig=5-8 rid=rId35 target=media/image27.png cap=图 5-8 代理路由分发图
+fig=5-9 rid=rId36 target=media/image28.png cap=图 5-9 build_todo 节点级工作流图
+fig=5-10 rid=rId37 target=media/image29.png cap=图 5-10 what_to_do 节点级工作流图
+fig=5-11 rid=rId38 target=media/image30.png cap=图 5-11 trivel 节点级工作流图
+fig=5-12 rid=rId39 target=media/image31.png cap=图 5-12 howToGo 节点级工作流图
+fig=5-13 rid=rId40 target=media/image32.png cap=图 5-13 事件协议时序图
+fig=5-14 rid=rId41 target=media/image33.png cap=图 5-14 RAG 入库管线图
+fig=5-15 rid=rId42 target=media/image34.png cap=图 5-15 RAG 问答节点级工作流图
+fig=5-16 rid=rId43 target=media/image35.png cap=图 5-16 数据落点图
+fig=5-17 rid=rId44 target=media/image36.png cap=图 5-17 核心实体关系图
+fig=6-1 rid=rId60 target=media/ch6_fig1.png cap=图 6-1 生产部署拓扑图
+fig=6-2 rid=rId61 target=media/ch6_fig2.png cap=图 6-2 CI/CD 执行流水图
+fig=6-3 rid=rId62 target=media/ch6_fig3.png cap=图 6-3 build_todo 中断恢复流程图
+fig=6-4 rid=rId63 target=media/ch6_fig4.png cap=图 6-4 SSE 事件协议与前端状态图
+fig=6-5 rid=rId64 target=media/ch6_fig5.png cap=图 6-5 提醒调度抢占流程图
+fig=6-6 rid=rId65 target=media/ch6_fig6.png cap=图 6-6 知识入库异步回写状态图
+fig=6-7 rid=rId66 target=media/ch6_fig7.png cap=图 6-7 视频录制与上传管线图

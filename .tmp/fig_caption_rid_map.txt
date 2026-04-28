@@ -1,0 +1,36 @@
+﻿idx=0200 fig=3-1 rid=rId9 cap=图 3-1 用户功能用例关系图
+idx=0205 fig=3-2 rid=rId10 cap=图 3-2 日程制定与调整功能实现流程
+idx=0208 fig=3-3 rid=rId11 cap=图 3-3 知识库及任务信息查询功能实现流程
+idx=0211 fig=3-4 rid=rId12 cap=图 3-4 WebRTC 个人状态记录功能实现流程
+idx=0214 fig=3-5 rid=rId13 cap=图 3-5 文本与语音双通道输入功能实现流程
+idx=0217 fig=3-6 rid=rId14 cap=图 3-6 任务调度功能实现流程
+idx=0226 fig=4-1 rid=rId15 cap=图4-1 设计目标与能力映射
+idx=0228 fig=4-2 rid=rId16 cap=图4-2 章节衔接关系
+idx=0233 fig=4-3 rid=rId17 cap=图4-3 系统总体架构图
+idx=0235 fig=4-4 rid=rId18 cap=图4-4 业务协同时序图
+idx=0240 fig=4-5 rid=rId19 cap=图4-5 前端功能结构图
+idx=0243 fig=4-6 rid=rId20 cap=图4-6 业务服务工作流结构图
+idx=0248 fig=4-7 rid=rId21 cap=图4-7 分层职责视图
+idx=0251 fig=4-8 rid=rId22 cap=图4-8 任务状态模型图
+idx=0254 fig=4-9 rid=rId23 cap=图4-9 对话事件协议图
+idx=0257 fig=4-10 rid=rId24 cap=图4-10 知识索引结构图
+idx=0260 fig=4-11 rid=rId25 cap=图4-11 调度协作视图
+idx=0265 fig=4-12 rid=rId26 cap=图4-12 数据存储映射图
+idx=0269 fig=4-13 rid=rId27 cap=图4-13 接口分层关系图
+idx=0276 fig=5-1 rid=rId28 cap=图 5-1 登录认证总流程图
+idx=0282 fig=5-2 rid=rId29 cap=图 5-2 会话令牌生命周期图
+idx=0287 fig=5-3 rid=rId30 cap=图 5-3 任务状态迁移图
+idx=0290 fig=5-4 rid=rId31 cap=图 5-4 任务写入与更新流程图
+idx=0293 fig=5-5 rid=rId32 cap=图 5-5 任务调度时序图
+idx=0299 fig=5-6 rid=rId33 cap=图 5-6 个人记录与贴图联动流程图
+idx=0302 fig=5-7 rid=rId34 cap=图 5-7 记录对象关系图
+idx=0310 fig=5-8 rid=rId35 cap=图 5-8 代理路由分发图
+idx=0315 fig=5-9 rid=rId36 cap=图 5-9 `build_todo` 节点级工作流图
+idx=0320 fig=5-10 rid=rId37 cap=图 5-10 `what_to_do` 节点级工作流图
+idx=0325 fig=5-11 rid=rId38 cap=图 5-11 `trivel` 节点级工作流图
+idx=0330 fig=5-12 rid=rId39 cap=图 5-12 `howToGo` 节点级工作流图
+idx=0338 fig=5-13 rid=rId40 cap=图 5-13 事件协议时序图
+idx=0343 fig=5-14 rid=rId41 cap=图 5-14 RAG 入库管线图
+idx=0346 fig=5-15 rid=rId42 cap=图 5-15 RAG 问答节点级工作流图
+idx=0352 fig=5-16 rid=rId43 cap=图 5-16 数据落点图
+idx=0387 fig=5-17 rid=rId44 cap=图 5-17 核心实体关系图

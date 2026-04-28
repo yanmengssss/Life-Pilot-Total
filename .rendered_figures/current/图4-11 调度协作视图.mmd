@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant SCH as 调度模块
+    participant REDIS as 时间队列
+    participant MYSQL as 任务库
+    participant MAIL as 通知模块
+
+    SCH->>REDIS: 拉取到期任务
+    SCH->>REDIS: 抢占任务
+    SCH->>MYSQL: 读取任务与用户配置
+    alt 任务到期
+        SCH->>MYSQL: 写入超时状态
+        SCH->>MAIL: 发送超时通知
+    else 任务未到期
+        SCH->>MAIL: 发送提醒通知
+        SCH->>REDIS: 写回下次触发时间
+    end

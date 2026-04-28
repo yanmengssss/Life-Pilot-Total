@@ -1,0 +1,20 @@
+flowchart TD
+    A[user query 用户问题]
+    B[agent.rag RAG执行节点 调用知识服务]
+    C{是否命中知识片段}
+    D[rag_fallback 回退普通回答]
+
+    E[query_analyzer 意图识别与查询改写]
+    F{意图分流}
+    G[chat_node 闲聊直接回复]
+    H[retrieval_node 多路召回 稠密+稀疏+关系检索]
+    I[filter_merge_node 去重与权限过滤]
+    J[reranker_node 候选重排]
+    K[generator_node 答案生成与证据组织]
+    L[response 返回答案]
+
+    A --> B --> C
+    C -->|未命中| D --> L
+    C -->|命中| E --> F
+    F -->|chat| G --> L
+    F -->|retrieval| H --> I --> J --> K --> L

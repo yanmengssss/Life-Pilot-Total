@@ -1,0 +1,14 @@
+flowchart LR
+    FE[LifePilot 前端]
+    BE[LifePilotServer]
+    MCP[LifePilot_mcp]
+    RAG[ai-server]
+    DB1[(任务数据)]
+    DB2[(知识数据)]
+
+    FE -- 对话流接口 --> BE
+    FE -- 任务与文件接口 --> BE
+    BE -- 工具协议调用 --> MCP
+    BE -- 检索与媒体调用 --> RAG
+    MCP --> DB1
+    RAG --> DB2

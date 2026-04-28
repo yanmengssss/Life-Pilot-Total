@@ -1,0 +1,14 @@
+flowchart LR
+    FE[前端交互层]
+    BE[业务编排层]
+    MCP[工具服务层]
+    RAG[知识服务层]
+    OBS[监控与日志层]
+
+    FE --> BE
+    BE --> MCP
+    BE --> RAG
+    FE --> OBS
+    BE --> OBS
+    MCP --> OBS
+    RAG --> OBS

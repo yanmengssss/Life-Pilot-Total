@@ -1,0 +1,17 @@
+flowchart TB
+    U[用户浏览器] --> FE[LifePilot 前端]
+    FE --> BE[LifePilotServer 5000]
+    BE --> MCP[LifePilot_mcp 7000]
+    BE --> RAG[ai-server 7100]
+
+    MCP --> MYSQL[(MySQL 任务与用户数据)]
+    BE --> MONGO[(MongoDB 对话记录)]
+    BE --> REDIS[(Redis 调度队列)]
+
+    RAG --> WEAV[(Weaviate 向量检索)]
+    RAG --> QDR[(Qdrant 检索索引)]
+    RAG --> NEO[(Neo4j 图结构)]
+    RAG --> OSS[(七牛对象存储)]
+
+    FE --> LOG[Metaphorical 日志服务]
+    LOG --> LOGDB[(MongoDB 日志库)]

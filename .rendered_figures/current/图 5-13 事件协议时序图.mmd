@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant FE as 前端
+    participant BE as 业务服务
+    participant WF as 工作流
+    FE->>BE: 提交请求
+    BE-->>FE: id
+    BE->>WF: 启动流程
+    WF-->>FE: think
+    WF-->>FE: response
+    WF-->>FE: confirm/thread_id
+    FE->>BE: judgment
+    WF-->>FE: refresh
+    WF-->>FE: done

@@ -1,0 +1,22 @@
+flowchart TD
+    A[get_time 时间注入 提供出行时段基准]
+    B[prepare_context 上下文准备 解析历史位置指代]
+    C[planner 规划节点 解析起终点与出行意图]
+    D{位置信息是否完整}
+    E[maps_ip_location 定位补全起点]
+    F[maps_geo 地理编码 解析终点坐标]
+    G{交通方式选择}
+    H[maps_direction_driving 驾车路径]
+    I[maps_direction_transit_integrated 公共交通路径]
+    J[maps_direction_walking/bicycling 步行或骑行路径]
+    K[planner 方案整合 比较时长、换乘与可达性]
+    L[response 输出路线方案]
+    M((END))
+
+    A --> B --> C --> D
+    D -->|起点缺失| E --> C
+    D -->|信息完整| F --> G
+    G --> H --> K
+    G --> I --> K
+    G --> J --> K
+    K --> L --> M

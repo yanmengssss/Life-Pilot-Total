@@ -1,0 +1,19 @@
+sequenceDiagram
+    actor User as 用户
+    participant FE as LifePilot
+    participant BE as LifePilotServer
+    participant RT as 工作流路由
+    participant MCP as LifePilot_mcp
+    participant RAG as ai-server
+    participant DB as 多源存储
+
+    User->>FE: 输入请求
+    FE->>BE: 提交请求
+    BE->>RT: 意图识别
+    RT->>MCP: 任务域操作
+    RT->>RAG: 知识域操作
+    MCP->>DB: 写入或查询任务数据
+    RAG->>DB: 查询知识索引与文档数据
+    DB-->>BE: 返回结果
+    BE-->>FE: 流式返回
+    FE-->>User: 展示反馈

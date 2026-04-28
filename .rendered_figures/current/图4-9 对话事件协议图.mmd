@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant FE as 前端
+    participant BE as 业务服务
+    participant WF as 工作流引擎
+
+    FE->>BE: 提交对话请求
+    BE->>FE: 事件 标识信息
+    BE->>WF: 启动工作流
+    WF-->>BE: 事件 过程信息
+    BE-->>FE: 事件 过程信息
+    WF-->>BE: 事件 回复信息
+    BE-->>FE: 事件 回复信息
+    WF-->>BE: 事件 刷新信号
+    BE-->>FE: 事件 刷新信号
+    BE-->>FE: 事件 完成信号

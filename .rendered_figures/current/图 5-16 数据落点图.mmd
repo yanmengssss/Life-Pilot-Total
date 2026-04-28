@@ -1,0 +1,7 @@
+flowchart TB
+    BIZ[业务层] --> MYSQL[(MySQL)]
+    BIZ --> MONGO[(MongoDB)]
+    BIZ --> REDIS[(Redis)]
+    BIZ --> VEC[(Qdrant/Weaviate)]
+    BIZ --> GRAPH[(Neo4j)]
+    BIZ --> OSS[(对象存储)]

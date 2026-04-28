@@ -1,0 +1,14 @@
+flowchart TD
+    A[get_time 时间注入 统一时间表达基准]
+    B[prepare_context 上下文准备 加载历史对话与任务快照]
+    C[executor 事实层生成 输出任务分析与建议草稿]
+    D[inspector 质量校验 检查遗漏、范围偏移、指代错误]
+    E{校验分流}
+    F[manager 结果整理 输出自然表达]
+    G[direct_output 直接输出 达到拒绝阈值时返回当前结果]
+    H((END))
+
+    A --> B --> C --> D --> E
+    E -->|通过| F --> H
+    E -->|不通过且未达阈值| C
+    E -->|不通过且达到阈值| G --> H

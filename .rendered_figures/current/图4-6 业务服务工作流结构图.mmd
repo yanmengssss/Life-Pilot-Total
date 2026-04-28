@@ -1,0 +1,11 @@
+flowchart LR
+    IN[对话请求] --> ROUTER[路由节点]
+    ROUTER --> W1[任务规划流程]
+    ROUTER --> W2[任务操作流程]
+    ROUTER --> W3[出行规划流程]
+    ROUTER --> W4[路线查询流程]
+    ROUTER --> W5[知识问答流程]
+
+    W1 --> MCP[工具服务]
+    W2 --> MCP
+    W5 --> RAG[知识服务]

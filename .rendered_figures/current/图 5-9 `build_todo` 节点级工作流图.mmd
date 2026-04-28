@@ -1,0 +1,19 @@
+flowchart TD
+    A[get_time 时间注入 统一当前时间基准]
+    B[prepare_context 上下文准备 加载历史对话与任务快照]
+    C[executor 任务草案生成 拆解标题/截止时间/描述/标签]
+    D[inspector 草案校验 校验格式、冲突与语义一致性]
+    E{校验分流}
+    F[formatter 结果格式化 转成前端可确认文本]
+    G[user_judgment 人工判断中断 等待 accept/reject]
+    H{用户决策}
+    I[save_to_mcp 任务写入 调用工具服务批量落库]
+    J[refresh event 刷新通知 驱动任务列表重拉]
+    K((END))
+
+    A --> B --> C --> D --> E
+    E -->|未通过且未达阈值| C
+    E -->|通过或达到重试阈值| F
+    F --> G --> H
+    H -->|reject| C
+    H -->|accept| I --> J --> K
