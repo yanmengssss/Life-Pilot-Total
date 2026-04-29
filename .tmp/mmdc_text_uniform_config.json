@@ -1,0 +1,32 @@
+{
+  "theme": "default",
+  "fontSize": 24,
+  "themeVariables": {
+    "fontFamily": "Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif",
+    "fontSize": "24px"
+  },
+  "themeCSS": ".label, .label text, .nodeLabel, .edgeLabel, .messageText, .loopText, .noteText, .stateLabel text { font-size: 24px !important; }",
+  "flowchart": {
+    "htmlLabels": true,
+    "curve": "basis"
+  },
+  "state": {
+    "useMaxWidth": false,
+    "fontSize": 24
+  },
+  "sequence": {
+    "actorFontSize": 24,
+    "messageFontSize": 24,
+    "noteFontSize": 24
+  },
+  "gantt": {
+    "fontSize": 24,
+    "sectionFontSize": 24
+  },
+  "class": {
+    "fontSize": 24
+  },
+  "er": {
+    "fontSize": 24
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "theme": "default",
+  "themeVariables": {
+    "fontFamily": "Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif",
+    "fontSize": "24px"
+  },
+  "flowchart": {
+    "htmlLabels": true,
+    "curve": "basis"
+  },
+  "state": {
+    "useMaxWidth": false
+  }
+}
